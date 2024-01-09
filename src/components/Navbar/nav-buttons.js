@@ -1,8 +1,9 @@
 import { Button} from '@chakra-ui/react'
 import React from 'react'
 
-export default function NavButton(){
+
+export default function NavButton({name}){
     return (
-        <Button size='sm'>Button</Button>
+        <Button>{name}</Button>
     );
 }

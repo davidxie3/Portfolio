@@ -1,10 +1,8 @@
-// components/button.js
-
 const Button = {
   // Styles for the base button
   baseStyle: {
-    fontWeight: "bold", // Change the font weight
     borderRadius: "md", // Change the border radius
+    border: "1px solid black"
   },
   // Styles for different sizes (e.g., small, medium, large)
   sizes: {
@@ -25,7 +23,7 @@ const Button = {
   // Styles for different states (e.g., hover, focus)
   defaultProps: {
     size: "md", // Default size
-    variant: "outlineRed", // Default variant
+    variant: "", // default variant
   },
 };
 

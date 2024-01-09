@@ -1,34 +1,22 @@
-import logo from './images/logo.svg';
-import './App.css';
-import { ChakraProvider } from '@chakra-ui/react'
-import Navbar from './components/Navbar/nav-bar.js'
-import theme from "./theme"
+import logo from "./images/logo.svg";
+import "./App.css";
+import { Flex, VStack } from "@chakra-ui/react";
 
 function App() {
   return (
-    <ChakraProvider theme={theme}>   
-    <div className="App">
-      <Navbar />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h1 className="text-3xl font-bold underline">
-            Second Try!
-        </h1>
+    <Flex
+      align="center"
+      direction={{ base: "column", md: "row" }}
+      h="calc(100vh - 50px)"
+      justify="center"
+      paddingX={{ base: "50", md: "0" }}
+    >
 
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-    </ChakraProvider>
+      <VStack>
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1>Site Under Construction!</h1>
+      </VStack>
+    </Flex>
   );
 }
 
