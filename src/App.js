@@ -1,13 +1,18 @@
-import logo from './logo.svg';
+import logo from './images/logo.svg';
 import './App.css';
+import { ChakraProvider } from '@chakra-ui/react'
+import Navbar from './components/Navbar/nav-bar.js'
+import theme from "./theme"
 
 function App() {
   return (
+    <ChakraProvider theme={theme}>   
     <div className="App">
+      <Navbar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload Ya Bitch.
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <h1 className="text-3xl font-bold underline">
             Second Try!
@@ -23,6 +28,7 @@ function App() {
         </a>
       </header>
     </div>
+    </ChakraProvider>
   );
 }
 
