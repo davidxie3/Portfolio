@@ -1,6 +1,6 @@
 import logo from "./images/logo.svg";
 import "./App.css";
-import { Flex, VStack } from "@chakra-ui/react";
+import { Flex, VStack, Text } from "@chakra-ui/react";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
     
         <VStack align="center" spacing="4">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>Site Under Construction!</h1>
+          <Text fontFamily="FKDisplay Regular"> Site Under Construction!</Text>
         </VStack>
       </Flex>
   );
