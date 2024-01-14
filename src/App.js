@@ -1,31 +1,24 @@
-import logo from "./images/logo.svg";
-import "./App.css";
-import { Flex, VStack, Text } from "@chakra-ui/react";
-import { motion } from "framer-motion"
+import Home from "./home"
+import About from "./about"
+import { createBrowserRouter, Router, Route, Routes,RouterProvider} from 'react-router-dom';
+
+// const router = createBrowserRouter([
+//   { 
+//     path: '/portfolio',
+//     element: <Home />,
+//   }, {
+//     path: '/about',
+//     element: <About />,
+//   }
+// ]) 
 
 function App() {
   return (
-    <Flex
-      alignItems="center"
-      justify="center"
-      // direction={{ base: "column", md: "row" }}
-      h="calc(100vh - 70px)"
-      // paddingX={{ base: "70", md: "0" }}
-    >
-    
-        <VStack align="center" spacing="4">
-        <motion.img
-          src={logo}
-
-          className="App-logo"
-          alt="logo"
-          animate={{ rotate: 360 }} // Rotate 360 degrees
-          transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-          style={{ width: "250px", height: "250px" }} // Rotate with a duration of 2 seconds, repeat infinitely, and use a linear easing function
-        />
-          <Text fontFamily="FKDisplay Regular"> Site Under Construction!</Text>
-        </VStack>
-      </Flex>
+    // <RouterProvider router={router} />
+      <Routes>
+        <Route path="/portfolio" element= {<Home />}/>
+        <Route path="/about" element= {<About />}/>
+      </Routes>
   );
 }
 

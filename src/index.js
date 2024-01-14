@@ -6,14 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
 import theme from "./theme"
 import NavBar from './components/Navbar/nav-bar';
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <NavBar/>
-      <App />
-    </ChakraProvider>
+    <BrowserRouter>
+      <ChakraProvider theme={theme}>
+        <NavBar/>
+        <App />
+      </ChakraProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
