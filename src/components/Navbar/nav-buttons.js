@@ -4,6 +4,6 @@ import React from 'react'
 
 export default function NavButton({name}){
     return (
-        <Button>{name}</Button>
+        <Button fontFamily='ClashDisplay Medium'>{name}</Button>
     );
 }

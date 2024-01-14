@@ -5,9 +5,9 @@ const styles = {
             outline: '1px solid red',
         },
         body: {
-        bg: '#FFF2DC',
-         // Replace with your desired background color
-        },
+            bg: '#FFF2DC',
+            // Replace with your desired background color
+            },
     }),
 };
 
